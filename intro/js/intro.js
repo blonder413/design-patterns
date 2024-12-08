@@ -58,3 +58,13 @@ console.log(names);
 
 const namesUpper = names.map((name) => name.toUpperCase());
 console.log(namesUpper);
+
+/**
+ * reduce hace un recorrido acumula por todos los elementos y retorna un solo resultado
+ */
+const numbers = [4, 13, 8, 10];
+const total = numbers.reduce((acum, number) => {
+    return acum + number;
+}, 0);
+const total2 = numbers.reduce((acum, number) => acum + number, 0);
+console.log(total, total2);
