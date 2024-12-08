@@ -68,3 +68,30 @@ const total = numbers.reduce((acum, number) => {
 }, 0);
 const total2 = numbers.reduce((acum, number) => acum + number, 0);
 console.log(total, total2);
+
+/**
+ * Es posible crear objetos con clases
+ */
+class Drink {
+    constructor(name) {
+        this.name = name;
+    }
+
+    getName() {
+        return this.name;
+    }
+}
+const coffe = new Drink("Café colombiano");
+console.log(coffe, coffe.name, coffe.getName());
+
+/**
+ * Es posible crear objetos con funciones
+ */
+function Drink2(name) {
+    this.name = name;
+    this.info = function () {
+        return this.name;
+    };
+}
+const agua = new Drink2("agua");
+console.log(agua, agua.info());
