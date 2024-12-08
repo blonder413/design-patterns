@@ -95,3 +95,16 @@ function Drink2(name) {
 }
 const agua = new Drink2("agua");
 console.log(agua, agua.info());
+
+class Beer extends Drink {
+    constructor(name, alcohol) {
+        super(name);
+        this.alcohol = alcohol;
+    }
+
+    getName() {
+        return super.getName() + " " + this.alcohol;
+    }
+}
+const beer = new Beer("Águila", 8.5);
+console.log(beer.getName());
