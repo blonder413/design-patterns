@@ -39,3 +39,14 @@ operation(
     4,
     13
 ); // (4+13) * 2 = 34
+
+/**
+ * Inmutable: La colección original no cambia al ejecutarse el método
+ * Mutalbe: Cambia el valor inicial
+ */
+// Foreach es inmutable
+const names = ["Jill", "Claire", "Barry"];
+names.forEach((name) => console.log(name));
+names.forEach((name) => console.log(name.toUpperCase()));
+names.sort();
+console.log(names);
