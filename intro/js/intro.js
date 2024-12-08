@@ -50,3 +50,11 @@ names.forEach((name) => console.log(name));
 names.forEach((name) => console.log(name.toUpperCase()));
 names.sort();
 console.log(names);
+
+/**
+ * map regresa un nuevo array con los valores modificados
+ * no cambia el array inicial
+ */
+
+const namesUpper = names.map((name) => name.toUpperCase());
+console.log(namesUpper);
