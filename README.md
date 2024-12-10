@@ -10,3 +10,11 @@ Permite ejecutar archivos typescript sin traspilaros a javascript.
 sudo apt install ts-node
 npm i ts-node
 ```
+
+# singleton
+
+Una clase solo debería tener una instancia
+
+# Strategy
+
+Tener comportamientos distintos en un objeto y poder agregarle nuevos comportamientos sin modificar el contexto inicial
