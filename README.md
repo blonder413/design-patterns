@@ -26,3 +26,7 @@ Al cambiar el atributo de un objeto se notifica a un conjunto de observadores
 # Decorator
 
 Permite agregar funcionalidad a clases reduciendo la cantidad de niveles de herencia
+
+# Builder
+
+Ayuda a crear objetos complejos encadenando constructores
