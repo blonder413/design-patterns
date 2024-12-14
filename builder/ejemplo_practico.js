@@ -75,7 +75,7 @@ const formBuilder = new FormBuilder();
 const formPeople = formBuilder
     .setAction("add.php")
     .setCheckBox("programador", "Programador")
-    .setColor("color","Color")
+    .setColor("color", "Color")
     .setEmail("email", "Correo")
     .setText("firstName", "Nombre")
     .setText("lastName", "Apellido")
@@ -83,3 +83,33 @@ const formPeople = formBuilder
 console.log(formPeople);
 
 form1.innerHTML = formPeople.getContent();
+
+class FormDirector {
+    constructor(formBuilder) {
+        this.setBuilder(formBuilder);
+    }
+
+    setBuilder(formBuilder) {
+        this.formBuilder = formBuilder;
+    }
+
+    createPeopleForm() {
+        this.formBuilder.reset();
+        this.formBuilder
+            .setText("firstName", "Nombre")
+            .setText("lastName", "Apellido");
+    }
+
+    creteContactForm() {
+        this.formBuilder.reset();
+        this.formBuilder.setText("nombre", "Nombre");
+        this.formBuilder.setEmail("email", "Correo");
+    }
+}
+// el objeto se pasa por referencia
+const director = new FormDirector(formBuilder);
+director.createPeopleForm();
+form2.innerHTML = formBuilder.build().getContent();
+
+director.creteContactForm()
+form3.innerHTML=formBuilder.build().getContent()
