@@ -30,3 +30,8 @@ Permite agregar funcionalidad a clases reduciendo la cantidad de niveles de here
 # Builder
 
 Ayuda a crear objetos complejos encadenando constructores
+
+# State
+
+Tipo comportamiento. Un contexto que puede tener un estado y según dicho estado será su
+comportamiento
