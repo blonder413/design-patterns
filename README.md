@@ -35,3 +35,7 @@ Ayuda a crear objetos complejos encadenando constructores
 
 Tipo comportamiento. Un contexto que puede tener un estado y según dicho estado será su
 comportamiento
+
+# Bridge
+
+Patrón de escrtura. Es un puente, serparando la clase de la implementación
